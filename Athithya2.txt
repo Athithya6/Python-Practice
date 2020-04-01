@@ -1,0 +1,35 @@
+'''
+#rotating an array
+def Solution(A,k):
+	l=len(A)
+	b=[]
+	print("The resultant right shifted array is:\n")
+	b=A[l-k:]+A[:l-k]            #right shift
+	print(b)	
+	#b=A[k-l:l]+A[0:k-l]    #left shift
+	#print("The resultant left-shifted array is:\n")
+	#print(b)
+l1=[]
+n=int(input("How many elements do you want to enter:\n"))
+for i in range(0,n):
+	l1.append(int(input("Enter each element:\n")))
+
+m=int(input("By how many times do you want to shift left:\n"))
+print("Original array: ",l1)
+Solution(l1,m)
+'''
+
+#finding minimum no.of steps
+def solution(x,y,d):
+	n=0
+	while(x+n*d<=y):
+		n=n+1
+	print("The minimum no.of jumps is: ",n)
+a=int(input("Enter the starting position: \n"))
+b=int(input("Enter the final position:\n"))
+c=int(input("Enter the jump step:\n"))
+solution(a,b,c)
+
+
+
+	
