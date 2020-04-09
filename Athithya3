@@ -15,7 +15,7 @@ def solution(l):
 		l3.append(abs(sum1-sum2))
 	print(min(l3))
 
-#solution([3,1,2,4,3])
+solution([3,1,2,4,3])
 
 
 		
